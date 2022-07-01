@@ -1,0 +1,57 @@
+all adb and fastboot commands to remove frp by pctrickszone.ml
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+visit our channel for more: https://www.youtube.com/channel/UCmcXVCxNwW5rp-KAc8qadbQ
+
+/////////////////////////////////
+
+
+ADB Commands:
+
+For Samsung
+
+
+adb shell am start -n com.google.android.gsf.login/
+
+adb shell am start -n com.google.android.gsf.login.LoginActivity
+
+adb shell content insert --uri content://settings/secure --bind name:s:user_setup_complete --bind value:s:1
+
+
+how to enalbe usb debugging mode on frplocked android tutorial here |:) https://www.youtube.com/watch?v=XiqE2uG4huQ
+
+For MOTO FRP / MTK / SPD
+adb shell content insert --uri content://settings/secure --bind name:s:user_setup_complete --bind value:s:1
+
+
+
+Fast Boot Commands / Qualcomm:
+
+For LENOVO FRP 
+fastboot erase config
+fastboot reboot
+
+For XIAOMI FRP MI FRP
+fastboot -w
+
+For MICROMAX YU YUPHORIA FRP
+Fastboot -i 0x2a96 erase config
+Fastboot -i 0x2a96 reboot
+
+For DEEP FRP
+fastboot erase config
+fastboot reboot
+
+For HTC FRP 
+fastboot erase config
+fastboot reboot
+
+
+all adb and fastboot commands to remove frp by pctrickszone.ml
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+visit our channel for more: https://www.youtube.com/channel/UCmcXVCxNwW5rp-KAc8qadbQ
+
+/////////////////////////////////
